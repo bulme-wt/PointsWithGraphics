@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:cc="using:PointsVisualization"
+        x:Class="PointsVisualization.MainWindow"
+        Title="PointsVisualization">
+    <StackPanel>
+        <Slider Name="numPointsSlider" Minimum="1" Maximum="1000" Value="100" ValueChanged="NumPointsSlider_OnValueChanged"></Slider>
+        <Button Name="drawRandom" Click="DrawRandom_OnClickwRandom_OnClick">Add Random Points</Button>
+        <Button Name="sortButton" Click="SortButton_OnClick">Sort</Button>
+        <cc:DrawingArea Name="drawingArea" Width="600"
+                        Height="600">
+        </cc:DrawingArea>
+    </StackPanel>
+</Window>
